@@ -14,7 +14,7 @@ env:
   IMAGE_NAME: yjring/vote-api
   DOCKER_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
   DOCKER_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
-  ACCESS_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+  ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   uat-backend-build-and-push:

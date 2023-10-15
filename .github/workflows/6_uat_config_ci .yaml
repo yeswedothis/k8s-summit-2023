@@ -8,7 +8,7 @@ on:
       - 'backend/src/main/resources/*'
 
 env:
-  ACCESS_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+  ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   update-configmap:
@@ -29,7 +29,7 @@ jobs:
       - name: Update API ConfigMap
         run: |
           git pull
-          kubectl create configmap vote-api-dev-configmap -n default --from-file=backend/src/main/resources/ --dry-run=client -o yaml  > deploy/uat/api-configMap.yaml
+          kubectl create configmap vote-api-dev-configmap -n uat --from-file=backend/src/main/resources/ --dry-run=client -o yaml  > deploy/uat/api-configMap.yaml
       
       - name: Update Deployment with Commit SHA
         run: |
