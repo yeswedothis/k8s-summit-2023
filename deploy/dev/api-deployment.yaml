@@ -4,7 +4,7 @@ metadata:
   labels:
     app: vote-app-dev
   name: vote-api-dev
-  namespace: default
+  namespace: dev
 spec:
   replicas: 1
   selector:
@@ -18,7 +18,7 @@ spec:
         vote-config-version: v1
     spec:
       containers:
-      - image: yjring/vote-api:2.0.0
+      - image: yjring/vote-api:0.1.0
         name: vote-api
         imagePullPolicy: Always
         resources:

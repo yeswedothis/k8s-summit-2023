@@ -36,4 +36,4 @@ kind: ConfigMap
 metadata:
   creationTimestamp: null
   name: vote-api-dev-configmap
-  namespace: default
+  namespace: uat
