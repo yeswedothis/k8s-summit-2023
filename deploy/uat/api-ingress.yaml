@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: api-ingress
-  namespace: default
+  namespace: uat
 spec:
   rules:
     - host: rke1.dannyyangcloud.link   #這邊改成你的Cluster2叢集的{IP}.sslip.io
