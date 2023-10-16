@@ -4,7 +4,7 @@ metadata:
   labels:
     app: vote-app-uat
   name: vote-api-dev-redis
-  namespace: default
+  namespace: uat
 spec:
   ports:
     - name: tcp

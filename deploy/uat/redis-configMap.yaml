@@ -4,7 +4,7 @@ metadata:
   labels:
     app: vote-app-dev
   name: vote-api-dev-redis-configmap
-  namespace: default
+  namespace: uat
 data:
   redis.conf: |-
     protected-mode yes

@@ -4,7 +4,7 @@ metadata:
   labels:
     app: vote-app-dev-svc
   name: vote-api-dev-svc
-  namespace: default
+  namespace: uat
 spec:
   ports:
     - name: http
