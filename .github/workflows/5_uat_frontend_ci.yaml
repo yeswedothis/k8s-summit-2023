@@ -8,7 +8,7 @@ on:
       - 'frontend/**'
 
 env:
-  IMAGE_NAME: es/vote-ui
+  IMAGE_NAME: yjring/vote-ui
   DOCKER_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
   DOCKER_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
   ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}

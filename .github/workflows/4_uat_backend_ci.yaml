@@ -11,7 +11,7 @@ on:
       - 'backend/docker-entrypoint.sh'
 
 env:
-  IMAGE_NAME: es/vote-api
+  IMAGE_NAME: yjring/vote-api
   DOCKER_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
   DOCKER_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
   ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
