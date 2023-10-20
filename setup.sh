@@ -4,7 +4,8 @@
 OrigStr="yjring"
 
 # 讀取 dockerAccount 並存入 ＄DOCKER_ACCOUNT 變數
-eval $(cat env.yaml | sed -n 's/^[ \t]*dockerAccount:[ \t]*\([^ \t]*\).*$/DOCKER_ACCOUNT="\1"/p')
+#eval $(cat env.yaml | sed -n 's/^[ \t]*dockerAccount:[ \t]*\([^ \t]*\).*$/DOCKER_ACCOUNT="\1"/p')
+eval $(cat env.yaml | sed -n 's/^[ \t]*dockerAccount:[ \t]*\([^[:space:]]*\)[ \t]*$/DOCKER_ACCOUNT="\1"/p')
 
 # 讀取 os 並存入 $OS_ARCH 變數
 eval $(cat env.yaml | sed -n 's/^[ \t]*os:[ \t]*\(.*\)[ \t]*$/OS_ARCH="\1"/p')
